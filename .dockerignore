@@ -3,7 +3,5 @@
 .env
 target/
 output/
-pom.xml
-src/
 Dockerfile
 README.md
