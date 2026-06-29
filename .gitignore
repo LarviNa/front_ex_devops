@@ -1,0 +1,12 @@
+*.class
+output/
+
+# IDE configurations
+.settings/
+.classpath
+.project
+.idea/
+.vscode/
+
+# Local configurations
+.env
