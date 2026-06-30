@@ -59,9 +59,6 @@ jobs:
         tags: |
           ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.ECR_REPOSITORY }}:latest
           ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.ECR_REPOSITORY }}:${{ github.sha }}
-        build-args: |
-          BACKEND_USERS_URL=${{ secrets.BACKEND_USERS_URL }}
-          BACKEND_PRODUCTS_URL=${{ secrets.BACKEND_PRODUCTS_URL }}
         cache-from: type=gha
         cache-to: type=gha,mode=max
 
