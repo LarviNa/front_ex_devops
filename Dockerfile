@@ -8,8 +8,8 @@ COPY pom.xml .
 COPY src ./src
 
 # Build arguments for backend API URLs
-ARG BACKEND_USERS_URL=http://44.201.104.142:8081
-ARG BACKEND_PRODUCTS_URL=http://54.157.145.239:8082
+ARG BACKEND_USERS_URL=http://100.53.44.185:8081
+ARG BACKEND_PRODUCTS_URL=http://44.192.17.208:8082
 
 # Generate .env file dynamically from build args
 RUN echo "BACKEND_USERS_URL=${BACKEND_USERS_URL}" > .env && \
